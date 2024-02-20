@@ -39,7 +39,7 @@ jobs:
       - name: Build Windows x64
         run: |
           mkdir build_win64
-          cmake -S . -B build_win64 -GNinja -DCMAKE_TOOLCHAIN_FILE=cmake/x86_64-w64-mingw32-win32.cmake
+          cmake -S . -B build_win64 -GNinja -DCMAKE_TOOLCHAIN_FILE=cmake/x86_64-w64-mingw32-posix.cmake
           cmake --build build_win64 --target package --config RelWithDebInfo
 
       - name: Upload a Build Artifact
