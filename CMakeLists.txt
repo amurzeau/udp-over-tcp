@@ -15,6 +15,9 @@ add_executable(udp-over-tcp ${SOURCES})
 
 if(WIN32)
     target_link_libraries(udp-over-tcp PRIVATE ws2_32)
+else()
+    find_package(Threads REQUIRED)
+    target_link_libraries(udp-over-tcp PRIVATE Threads::Threads)
 endif()
 
 install(TARGETS udp-over-tcp RUNTIME DESTINATION ./)
