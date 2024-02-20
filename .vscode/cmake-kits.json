@@ -1,0 +1,14 @@
+[
+    {
+        "name": "GCC x86_64-w64-mingw32-posix",
+        "toolchainFile": "cmake/x86_64-w64-mingw32-posix.cmake"
+    },
+    {
+        "name": "GCC x86_64-w64-mingw32-win32",
+        "toolchainFile": "cmake/x86_64-w64-mingw32-win32.cmake"
+    },
+    {
+        "name": "GCC arm-linux-gnueabihf",
+        "toolchainFile": "cmake/arm-linux-gnueabihf.cmake"
+    }
+]
