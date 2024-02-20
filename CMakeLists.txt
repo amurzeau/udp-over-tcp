@@ -15,6 +15,7 @@ add_executable(udp-over-tcp ${SOURCES})
 
 if(WIN32)
     target_link_libraries(udp-over-tcp PRIVATE ws2_32)
+    target_compile_definitions(udp-over-tcp PRIVATE _WIN32_WINNT=0x600)
 else()
     find_package(Threads REQUIRED)
     target_link_libraries(udp-over-tcp PRIVATE Threads::Threads)

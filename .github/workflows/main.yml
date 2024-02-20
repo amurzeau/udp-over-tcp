@@ -24,7 +24,7 @@ jobs:
           sudo apt-get install -y build-essential ninja-build cmake mingw-w64 g++-arm-linux-gnueabihf
 
       # Runs a set of commands using the runners shell
-      - name: Build Linux AMD64
+      - name: Build Linux amd64
         run: |
           mkdir build_linux_amd64
           cmake -S . -B build_linux_amd64 -GNinja
