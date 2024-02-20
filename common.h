@@ -12,7 +12,7 @@ typedef SOCKET socket_t;
 #include <sys/socket.h>
 #include <unistd.h>
 typedef int socket_t;
-#define
+#define INVALID_SOCKET -1
 #endif
 
 #include <stdint.h>
