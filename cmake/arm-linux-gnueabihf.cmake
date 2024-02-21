@@ -7,6 +7,7 @@
 # This is free and unencumbered software released into the public domain.
 
 set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR armhf)
 set(TOOLCHAIN_PREFIX arm-linux-gnueabihf)
 
 # cross compilers to use for C, C++ and Fortran
