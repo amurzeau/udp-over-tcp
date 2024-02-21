@@ -6,6 +6,9 @@ name: main
 # Triggers the workflow on push or pull request events
 on: [push, pull_request, workflow_dispatch]
 
+permissions:
+  contents: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # build
